@@ -1,0 +1,6 @@
+C:\Users\Małgorzata Gadziała\source\repos\Cwiczenia3\Cwiczenia3\obj\Debug\Cwiczenia3.csprojAssemblyReference.cache
+C:\Users\Małgorzata Gadziała\source\repos\Cwiczenia3\Cwiczenia3\bin\Debug\Cwiczenia3.exe.config
+C:\Users\Małgorzata Gadziała\source\repos\Cwiczenia3\Cwiczenia3\bin\Debug\Cwiczenia3.exe
+C:\Users\Małgorzata Gadziała\source\repos\Cwiczenia3\Cwiczenia3\bin\Debug\Cwiczenia3.pdb
+C:\Users\Małgorzata Gadziała\source\repos\Cwiczenia3\Cwiczenia3\obj\Debug\Cwiczenia3.exe
+C:\Users\Małgorzata Gadziała\source\repos\Cwiczenia3\Cwiczenia3\obj\Debug\Cwiczenia3.pdb
