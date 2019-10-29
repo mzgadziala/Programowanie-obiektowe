@@ -9,7 +9,7 @@ using static Cwiczenia3.Program;
 
 namespace Cwiczenia3
 {
-    class Osoba
+     abstract class Osoba
     {
         //pola klasy
         private string imie;
@@ -39,7 +39,7 @@ namespace Cwiczenia3
 
         public Plcie Plec1 { get => plec; set => plec = value; }
 
-        //konstruktory (parametryczne i nieparametryczne!!)
+        //konstruktory (parametryczne i nieparametryczne)
         public Osoba()
         {
             imie = null;
@@ -48,9 +48,9 @@ namespace Cwiczenia3
             PESEL = "00000000000";
         }
 
-        public Osoba(string i, string n)
+        public Osoba(string imie, string nazwisko)
         {
-            this.imie = imie;
+            this.imie = Imie;
             this.nazwisko = nazwisko;
         }
 
@@ -66,7 +66,7 @@ namespace Cwiczenia3
         }
         //inne metody
 
-        public bool CheckPESEL(string p)    //jak sprawdzic, czy nr pesel ma 11 liter?
+        public bool CheckPESEL(string p)    //sprawdzenie, czy nr pesel ma 11 liter
         {
             if (p.Length != 11) return false;
             Regex rgx = new Regex(@"\d{ 11 }");
@@ -74,6 +74,20 @@ namespace Cwiczenia3
             if (p[9] % 2 != (int)Plec) return false;
             return true;
 
+        }
+
+        public void SprawdzPesel(string p)
+        {
+            Regex rgx = new Regex(@"\d{ 11 }");
+            if(p.Length != 11 || p[9] % 2 != (int)Plec)
+            {
+                throw new WrongPESELException();
+            }
+            else
+            {
+                Console.WriteLine(p);
+            }
+               
         }
         public int Wiek()
         {
